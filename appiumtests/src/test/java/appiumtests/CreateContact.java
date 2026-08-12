@@ -35,38 +35,38 @@ public class CreateContact {
 		else
 			System.out.println("Unable to contact click");
 		
-//		WebElement createNewContact= driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"com.google.android.dialer:id/contact_name\" and @text=\"Create new contact\"]"));
-//		if(createNewContact.isDisplayed())
-//		{
-//			createNewContact.click();
-//			System.out.println("New Contact clicked");
-//		}
-//		else
-//			System.out.println("Unable to click new contact");
-//		WebElement firstName = driver.findElement(By.xpath("//android.widget.EditText[@text=\"First name\"]"));
-//		if(firstName.isDisplayed())
-//		{
-//			firstName.sendKeys("Appium");
-//			System.out.println("Appium is the first name");
-//		}
-//		else
-//			System.out.println("Unable to enter first name");
-//		WebElement number =driver.findElement(By.xpath("//android.widget.EditText[@text=\"Phone\"]"));
-//		if(number.isDisplayed())
-//		{
-//			number.sendKeys("1234567890");
-//			System.out.println("Number entered");
-//		}
-//		else
-//			System.out.println("Unable to enter number");
-//		WebElement save = driver.findElement(By.xpath("//android.widget.Button[@resource-id=\"com.google.android.contacts:id/toolbar_button\"]"));
-//		if(save.isDisplayed())
-//		{
-//			save.click();
-//			System.out.println("Saved");
-//		}
-//		else
-//			System.out.println("Unable to save");
+		WebElement createNewContact= driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"com.google.android.dialer:id/contact_name\" and @text=\"Create new contact\"]"));
+		if(createNewContact.isDisplayed())
+		{
+			createNewContact.click();
+			System.out.println("New Contact clicked");
+		}
+		else
+			System.out.println("Unable to click new contact");
+		WebElement firstName = driver.findElement(By.xpath("//android.widget.EditText[@text=\"First name\"]"));
+		if(firstName.isDisplayed())
+		{
+			firstName.sendKeys("Appium");
+			System.out.println("Appium is the first name");
+		}
+		else
+			System.out.println("Unable to enter first name");
+		WebElement number =driver.findElement(By.xpath("//android.widget.EditText[@text=\"Phone\"]"));
+		if(number.isDisplayed())
+		{
+			number.sendKeys("1234567890");
+			System.out.println("Number entered");
+		}
+		else
+			System.out.println("Unable to enter number");
+		WebElement save = driver.findElement(By.xpath("//android.widget.Button[@resource-id=\"com.google.android.contacts:id/toolbar_button\"]"));
+		if(save.isDisplayed())
+		{
+			save.click();
+			System.out.println("Saved");
+		}
+		else
+			System.out.println("Unable to save");
 		WebElement search = driver.findElement(By.id("com.google.android.dialer:id/open_search_bar_text_view_container"));
 		if(search.isDisplayed())
 		{
